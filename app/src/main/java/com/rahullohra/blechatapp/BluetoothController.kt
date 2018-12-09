@@ -50,7 +50,7 @@ class BluetoothController {
     @RequiresApi(Build.VERSION_CODES.JELLY_BEAN_MR2)
     fun setupServer() {
         val service = BluetoothGattService(SERVICE_UUID, BluetoothGattService.SERVICE_TYPE_PRIMARY)
-        service.addCharacteristic(Util.prepareCharateristic(USER_META_DATA_UUID, USER_META_DATA_DESCRIPTOR_UUID))
+        service.addCharacteristic(Util.provideCharacteristic(USER_META_DATA_UUID, USER_META_DATA_DESCRIPTOR_UUID))
 
         mGattServer?.addService(service)
     }

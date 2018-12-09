@@ -9,7 +9,7 @@ import java.util.*
 class Util{
     companion object {
         @TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR2)
-        fun prepareCharateristic(characteristicUuid: UUID, descriptorUuid: UUID): BluetoothGattCharacteristic {
+        fun provideCharacteristic(characteristicUuid: UUID, descriptorUuid: UUID): BluetoothGattCharacteristic {
             val userMetaDataCharacteristic = BluetoothGattCharacteristic(
                 characteristicUuid,
                 BluetoothGattCharacteristic.PROPERTY_WRITE_NO_RESPONSE,
