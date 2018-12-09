@@ -10,10 +10,6 @@ import android.os.ParcelUuid
 import androidx.annotation.RequiresApi
 import java.util.*
 
-/*
-* Ble chat series #POST 2: https://medium.com/@tgunix/bluetooth-low-energy-chat-application-series-2-75e1208179ae
-* */
-
 class BluetoothController {
 
     val SERVICE_ID = "364710c0–6359–4bdf-9946–9f54d07eb8d3"
